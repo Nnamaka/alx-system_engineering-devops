@@ -1,0 +1,45 @@
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# chmod u+x 10-love_exponent_breath
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# git add .
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# git commit -m "saving"
+[main 731d254] saving
+ 1 file changed, 2 insertions(+)
+ create mode 100755 0x03-shell_variables_expansions/10-love_exponent_breath
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 371 bytes | 371.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Nnamaka/alx-system_engineering-devops.git
+4fc34de..731d254  main -> main
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# man bc
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# emacs 11-binary_to_decimal
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# chmod u+x 11-binary_to_decimal
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# git add .
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# git commit -m "new work"
+[main a4f4137] new work
+1 file changed, 2 insertions(+)
+create mode 100755 0x03-shell_variables_expansions/11-binary_to_decimal
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 362 bytes | 362.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Nnamaka/alx-system_engineering-devops.git
+731d254..a4f4137  main -> main
+root@8943e8132cee:~/alx-system_engineering-devops/0x03-shell_variables_expansions# emacs
+case  in
+    q)
+	
+	;;
+    u)
+	
+	;;
+    
+#!/bin/bash
+echo $(($BREATH**$LOVE))
