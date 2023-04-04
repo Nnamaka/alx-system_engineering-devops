@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This scripts configures the web-02 server
+
+sudo apt-get update
+sudo apt-get install -y nginx
