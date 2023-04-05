@@ -3,3 +3,10 @@
 
 sudo apt-get update
 sudo apt-get install -y nginx
+
+
+declare place="SSL configuratioin\n\tadd_header X-Served-By \$HOSTNAME\n"
+
+sudo sed -i "s/SSL configuration/$place/g" /etc/nginx/sites-available/default
+
+service nginx restart
