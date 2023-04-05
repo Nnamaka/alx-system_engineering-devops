@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
-# This scripts configures the web-02 server
+# script that configures my webservers
 
 sudo apt-get update
 sudo apt-get install -y nginx
 
-
-declare place="SSL configuratioin\n\tadd_header X-Served-By \$HOSTNAME\n"
+declare place="SSL configuration\n\tadd_header X-Served-By \$HOSTNAME;\n"
 
 sudo sed -i "s/SSL configuration/$place/g" /etc/nginx/sites-available/default
 
-service nginx restart
+sudo service nginx start
