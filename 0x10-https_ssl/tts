@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-dig "$2.$1" | \
-grep -A1 'ANSWER SECTION:' | tail -1
-
-
