@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Debug nginx port
 
-rm /etc/nginx/sites-enabled/default
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 sudo service nginx restart
