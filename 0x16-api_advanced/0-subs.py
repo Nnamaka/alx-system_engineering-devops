@@ -6,6 +6,9 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ returns number of subscribers """
+    if type(subreddit) != str:
+        return (0)
+
     api = 'http://www.reddit.com/r/{}/about'.format(subreddit)
 
     res = requests.get(api)
