@@ -2,6 +2,7 @@
 """ Prints first 10 hot post """
 import requests
 
+
 def top_ten(subreddit):
     """ returns top 10 post """
 
