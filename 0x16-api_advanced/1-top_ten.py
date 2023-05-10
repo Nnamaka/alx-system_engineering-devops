@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Prints first 10 hot post """
-
+import requests
 
 def top_ten(subreddit):
     """ returns top 10 post """
@@ -11,7 +11,7 @@ def top_ten(subreddit):
     res = requests.get(api, headers=header, params={
                        'limit': 10}, allow_redirects=False)
 
-    if res.status_code == 404:
+    if res.status_code != 200:
         print('None')
         return
 
