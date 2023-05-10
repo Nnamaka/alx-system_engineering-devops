@@ -6,12 +6,11 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ returns number of subscribers """
-    if type(subreddit) != str:
-        return (0)
+    header = {'User-Agent': 'shell magic'}
 
-    api = 'http://www.reddit.com/r/{}/about'.format(subreddit)
+    api = 'http://www.reddit.com/r/{}/about.json'.format(subreddit)
 
-    res = requests.get(api)
+    res = requests.get(api, headers=header)
 
     if res.status_code != 200:
         return (0)
