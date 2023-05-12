@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ return information about todo list"""
 
-import sys
 import requests as req
+import sys
 
 if __name__ == "__main__":
     api = 'https://jsonplaceholder.typicode.com/'
