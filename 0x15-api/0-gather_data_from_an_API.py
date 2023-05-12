@@ -13,7 +13,7 @@ if __name__ == "__main__":
     tasks = req.get(api + 'todos', params=values).json()
 
     finished = [task.get('title')
-                for task in tasks if task.get('completed') == True]
+                for task in tasks if task.get('completed') is True]
 
     print('Employee {} is done with tasks({}/{}):'.format(user.get('name'),
           len(finished), len(tasks)))
