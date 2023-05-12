@@ -10,11 +10,13 @@ if __name__ == "__main__":
     values = {'userId': idx}
 
     user = req.get(api + 'users/{}'.format(idx)).json()
-    tasks = req.get(api + 'todos',params=values).json()
+    tasks = req.get(api + 'todos', params=values).json()
 
-    finished = [ task.get('title') for task in tasks if task.get('completed') == True]
+    finished = [task.get('title')
+                for task in tasks if task.get('completed') == True]
 
-    print('Employee {} is done with tasks({}/{}):'.format(user.get('name'), len(finished), len(tasks)))
+    print('Employee {} is done with tasks({}/{}):'.format(user.get('name'),
+          len(finished), len(tasks)))
 
     for task in finished:
         print('\t {}'.format(task))
