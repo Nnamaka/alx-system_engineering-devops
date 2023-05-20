@@ -10,5 +10,5 @@ exec {'Debug command':
 
 exec {'restart_nginx':
     command => 'nginx restart',
-    path => '/etc/init.d/'
+    path    => '/etc/init.d/'
 }
